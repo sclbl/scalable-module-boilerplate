@@ -21,4 +21,19 @@ A starting point for Scalable modules. Includes the module base, skeleton and fo
 
   `cd <your_module> && rm -rf .git`
 
-3. Start coding!
+3. Update `settings.json`
+
+  Replace `<Module Name>` and `<Developer Name>` with your data.
+
+4. Start coding!
+
+# README for your module
+Add a description for your module.
+
+## Basic Usage
+Just fill out the variables in the settings.json file.
+Then run the application on a free port (The Scalable system should already be running):
+
+e.g. `meteor --settings settings.json --port 4000`
+
+The module will automatically register itself and should be visible seconds after that.

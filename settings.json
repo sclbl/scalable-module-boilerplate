@@ -2,8 +2,8 @@
   "public": {
     "scalable": {
       "module": {
-        "name": "Module Name",
-        "developer": "Developer Name"
+        "name": "<Module Name>",
+        "developer": "<Developer Name>"
       },
       "core": {
         "settings": {
