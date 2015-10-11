@@ -23,17 +23,43 @@ A starting point for Scalable modules. Includes the module base, skeleton and fo
 
 3. Update `settings.json`
 
-  Replace `<Module Name>` and `<Developer Name>` with your data.
+  Replace `<Module Name>`, `<Developer Name>` and `"rootUrl": "http://host:port"` with your information.
 
-4. Start coding!
+  Example: The Scalable Notes module with Scalable core running locally on port 3000 and secretKey XXX.
 
-# README for your module
-Add a description for your module.
+	```
+	{
+	  "public": {
+	    "scalable": {
+	      "module": {
+	        "name": "Notes",
+	        "developer": "Scalable"
+	      },
+	      "core": {
+	        "settings": {
+	          "rootUrl": "http://127.0.0.1:3000"
+	        }
+	      }
+	    }
+	  },
+	  "scalable": {
+	    "core": {
+	      "settings": {
+	        "secretKey": "XXX"
+	      }
+	    }
+	  }
+	}
+	```
 
-## Basic Usage
-Just fill out the variables in the settings.json file.
-Then run the application on a free port (The Scalable system should already be running):
+4. Run Scalable core locally on port 3000 with
 
-e.g. `meteor --settings settings.json --port 4000`
+  `meteor --settings settings.json --port 3000`
 
-The module will automatically register itself and should be visible seconds after that.
+5. Run your module locally on a free port with your settings
+
+  e.g. `meteor --settings settings.json --port 4000`
+
+  The module will automatically register itself and should be visible seconds after that.
+
+6. Happy coding!
